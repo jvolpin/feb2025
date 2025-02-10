@@ -9,7 +9,6 @@ public class DataStructures {
     //Si se alteran los tests, se invalidará el ejercicio sin posibilidad de corregirlo.
     public static List<String> concatenarListas(List<String> lista1, List<String> lista2) {
         List<String> concatenada = new ArrayList<>();
-        // Implementación aquí
         return concatenada;
     }
 
@@ -21,17 +20,17 @@ public class DataStructures {
         Assert.assertEquals(esperado, concatenarListas(lista1, lista2));
     }
 
-    public static int contarPalabrasUnicas(List<String> palabras) {
+    public static int contarPalabrasDistintas(List<String> palabras) {
         int conteo = 0;
         // Implementación aquí
         return conteo;
     }
 
     @Test
-    public void testContarPalabrasUnicas() {
+    public void testContarPalabrasDistintas() {
         List<String> palabras = Arrays.asList("apple", "banana", "apple", "orange", "banana", "grape");
-        int esperado = 3; // 'apple', 'banana', 'orange'
-        Assert.assertEquals(esperado, contarPalabrasUnicas(palabras));
+        int esperado = 4; // 'apple, 'banana', 'orange', 'grape'
+        Assert.assertEquals(esperado, contarPalabrasDistintas(palabras));
     }
 
     public static Map<String, Integer> combinarMapas(Map<String, Integer> mapa1, Map<String, Integer> mapa2) {
