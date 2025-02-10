@@ -19,7 +19,6 @@ public class JavaStreams {
     public void testElevarAlCuadrado() {
         List<Integer> numeros = Arrays.asList(1, 2, 3, 4);
         List<Integer> esperado = Arrays.asList(1, 4, 9, 16);
-        // Implementación aquí
         Assert.assertEquals(esperado, elevarAlCuadrado(numeros));
     }
 
